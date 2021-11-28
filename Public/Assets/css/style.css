@@ -1,0 +1,86 @@
+body{
+    /* Important is used to override bootstrap font family class */
+    font-family: 'Montserrat', sans-serif !important;
+    color: #333 !important;
+    font-size: small;
+}
+
+.jumbotron{
+    background-color: inherit;
+}
+
+.branding img{
+    height: 43px;
+    margin-top: -10px;
+}
+
+.branding a{
+    font-size:27px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.links-holder{
+    justify-content: right;
+}
+
+.navbar-nav{
+    width: 23rem;
+    justify-self: flex-end;
+    justify-content: space-between;
+}
+
+
+.nav-item a{
+    color:gray !important;
+    font-weight:600;
+}
+
+.signin-image{
+    height:390px;
+    border:25px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.display-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.btn-orange{
+    background-color: #E4866A;
+}
+
+.btn-orange:hover{
+    background-color: coral;
+}
+
+.btn-orange-outline{
+    border:1px solid #E4866A;
+}
+
+.btn-orange-outline:hover{
+    background-color: coral;
+    color:white;
+}
+
+input:focus{
+    outline-offset: 0px;
+    outline: none;
+}
+
+/* Google Wala Green : #01796b */
+/* Khidki Wala Green : #7DCCAB*/
+/* Surrounding orange :#E4866A */
