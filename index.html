@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="Public/Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/Assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="Public/Assets/js/jquery-3.4.1.min.js"></script>
+    <script src="Public/Assets/js/app.js"></script>
+    <script>
+        $(function(){
+            const urlParams = new URLSearchParams(window.location.search);
+            var meeting_id = urlParams.get('meetingID');
+            user_id = window.prompt('Enter your user id ');
+
+            if(!user_id || !meeting_id){
+                alert('User id or meeting id missing');
+                window.location.href = './action.html';
+                return;
+            }
+            $("meetingContainer").show();
+            MyApp._init(user_id,meeting_id );
+        })
+    </script>
     <title>Spaces</title>
 </head>
 <body>
